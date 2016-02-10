@@ -1,0 +1,12 @@
+{
+  "name": "pi",
+  "version": "1.0.0",
+  "description": "raspberry pi watch",
+  "main": "main.js",
+  "author": "",
+  "dependencies": {
+    "jsdom": "^8.0.2",
+    "moment": "^2.11.2",
+    "request-promise": "^2.0.0"
+  }
+}
