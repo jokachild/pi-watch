@@ -8,6 +8,7 @@
     "johnny-five": "^0.9.19",
     "raspi-io": "^5.2.0",
     "jsdom": "^8.0.2",
+    "lodash": "^4.3.0",
     "moment": "^2.11.2",
     "request-promise": "^2.0.0"
   },

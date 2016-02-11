@@ -1,12 +1,12 @@
 var Five = require("johnny-five");
 var Raspi = require("raspi-io");
-var GetRate = require("./get-rate");
+var Minfin = require("./minfin");
 
 
 var usdRate = "0000";
 
 var requestRate = function () {
-    GetRate(function (err, rate) {
+    Minfin.GetRate("usd", function (err, rate) {
         if (!err) {
             usdRate = rate;
         }
@@ -31,5 +31,5 @@ board.on("ready", function() {
 
     setInterval(function() {
         digits.print("US  " + usdRate);
-    }, 1000);
+    }, 5000);
 });
